@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/viewpost.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Post Info</title>
+    <a href="/logout" style="
+    padding-left: 500px;
+">Logout</a>
+    <a href="/back" style="
+    padding-left: 40px;
+">Go Back To Main Page</a>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="show">
+            <h1>Description</h1>
+            <p style="
+                    margin-bottom: 80px;
+                    ">{{post.description}}</p>
+            <h2>Title</h2>
+            <p>{{post.title}}</p>
+            <h3>Link</h3>
+            <p><a href="{{post.message}}">{{post.message}}</a></p>
+            <h4>Uploader</h4>
+            <p>{{post.poster.first_name}} {{post.poster.last_name}}</p>
+            <h5>Likes</h5>
+            <p>{{ post.user_likes.count }}</p>
+        </div>
+    </div>
+</body>
+
+</html>
