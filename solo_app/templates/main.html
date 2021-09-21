@@ -63,12 +63,14 @@
                         padding-left: 230px;
                     ">{{post.title}}</p>
                     <p><a href="{{post.message}}">{{post.message}}</a></p>
-                    <p>Uploaded By: {{post.poster.first_name}} {{post.poster.last_name}}</p>
+                    <p style="
+                        padding-left: 185px;
+                    ">Uploaded By: {{post.poster.first_name}} {{post.poster.last_name}}</p>
                     <a href="/like/{{post.id}}" role="button" class="btn btn-outline-primary">Like</a>
                     <a href="/main/{{post.id}}/show" role="button" class="btn btn-outline-success">View Description</a>
                     <a href="/main/{{post.id}}/edit" role="button" class="btn btn-outline-secondary">Edit</a>
                     <a href="/main/{{post.id}}/delete" role="button" class="btn btn-outline-danger">Delete</a>
-                    <p>{{post.user_likes.count}} Users liked this</p>
+                    <p>{{post.user_likes.count}} Likes</p>
                 </li>
                 {% endfor %}
             </ul>
