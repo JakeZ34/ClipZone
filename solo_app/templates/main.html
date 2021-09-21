@@ -31,7 +31,9 @@
             <h1 style="
                 padding-left: 225px;
             "> Welcome, {{ user.first_name }}! </h1>
-            <h2>Upload your clip:</h2>
+            <h2 style="
+                padding-left: 235px;
+            ">Upload your clip:</h2>
             <form action="/make_post" method="POST">
                 {% csrf_token %}
                 <label for='mess'>Link:</label>
