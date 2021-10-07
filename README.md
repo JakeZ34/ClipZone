@@ -1,4 +1,4 @@
-### ClipZone
+# ClipZone
 
 ## Features
 * REST API with Python and Django
