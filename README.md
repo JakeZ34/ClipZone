@@ -8,3 +8,4 @@
 * Users can like others posts
 
 ## Demo
+![gif](/demo/proj.gif)
