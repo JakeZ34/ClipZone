@@ -130,10 +130,11 @@
                                             ">{{post.title}}</p>
                                             <p><a href="{{post.message}}">{{post.message}}</a></p>
                                             <p>Uploaded By: {{post.poster.first_name}} {{post.poster.last_name}}</p>
+                                            <p>Description: {{post.description}}</p>
                                             <a href="/like/{{post.id}}" role="button"
                                                 class="btn btn-outline-primary">Like</a>
                                             <a href="/main/{{post.id}}/show" role="button"
-                                                class="btn btn-outline-success">View Description</a>
+                                                class="btn btn-outline-success">View Full Post</a>
                                             <a href="/main/{{post.id}}/edit" role="button"
                                                 class="btn btn-outline-secondary">Edit</a>
                                             <a href="/main/{{post.id}}/delete" role="button"
@@ -165,8 +166,8 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="form-group">
-                                        <label for="ptitle">Title</label>
-                                        <input type="text" class="form-control" id="threadTitle"
+                                        <label for="title">Title</label>
+                                        <input type="text" class="form-control" name="title" id="title"
                                             placeholder="Enter title" autofocus="" />
                                     </div>
                                     <textarea class="form-control summernote" style="display: none;"></textarea>
