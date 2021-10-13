@@ -124,11 +124,20 @@ def back(request):
 
 
 def show_post(request, id):
+    id = id
+    user = User.objects.get(id=request.session['user_id'])
     context = {
-        'post': Post.objects.get(id=id)
+        'posts': Post.objects.filter(id=id)
     }
     return render(request, 'showpost.html', context)
 
 
 def welcome(request):
     return render(request, 'loginpage.html')
+
+
+#def show_post(request, id):
+    #context = {
+        #'post': Post.objects.get(id=id)
+    #}
+    #return render(request, 'showpost.html', context)

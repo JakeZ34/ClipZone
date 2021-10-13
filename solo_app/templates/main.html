@@ -93,7 +93,9 @@
                     <option value="3">No Replies Yet</option> -->
                         </select>
                         <p style="
-                            padding-left: 200px;
+                            font-size: 30px;
+                            padding-left: 150px;
+                            margin-bottom: 4px;
                         ">Welcome, {{ user.first_name }}!</p>
                         <span class="input-icon input-icon-sm ml-auto w-auto">
                             <input type="text"
@@ -130,11 +132,10 @@
                                             ">{{post.title}}</p>
                                             <p><a href="{{post.message}}">{{post.message}}</a></p>
                                             <p>Uploaded By: {{post.poster.first_name}} {{post.poster.last_name}}</p>
-                                            <p>Description: {{post.description}}</p>
                                             <a href="/like/{{post.id}}" role="button"
                                                 class="btn btn-outline-primary">Like</a>
-                                            <!-- <a href="/main/{{post.id}}/show" role="button"
-                                                class="btn btn-outline-success">View Full Post</a> -->
+                                            <a href="/main/{{post.id}}" role="button"
+                                                class="btn btn-outline-success">View Description</a>
                                             <a href="/main/{{post.id}}/edit" role="button"
                                                 class="btn btn-outline-secondary">Edit</a>
                                             <a href="/main/{{post.id}}/delete" role="button"
@@ -203,7 +204,7 @@
                 margin-top: 20px;
                 color: #1a202c;
                 text-align: left;
-                background-color: #e2e8f0;
+                background-color: #006eff;
             }
 
             .inner-wrapper {
