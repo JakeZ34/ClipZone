@@ -65,6 +65,7 @@ class Post(models.Model):
     message = models.URLField(max_length=200)
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
+    #image = models.ImageField()
     poster = models.ForeignKey(User, related_name='user_messages', on_delete=models.CASCADE)
     user_likes = models.ManyToManyField(User, related_name='liked_posts')
     created_at = models.DateTimeField(auto_now_add=True)
