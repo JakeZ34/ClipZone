@@ -94,7 +94,7 @@
                         </select>
                         <p style="
                             font-size: 30px;
-                            padding-left: 150px;
+                            padding-left: 185px;
                             margin-bottom: 4px;
                         ">Welcome, {{ user.first_name }}!</p>
                         <span class="input-icon input-icon-sm ml-auto w-auto">
@@ -126,7 +126,10 @@
                                     <div class="media-body">
                                         <!-- <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">Realtime fetching data</a></h6> -->
                                         {% for post in posts %}
-                                        <ul>
+                                        <ul style="
+                                            border: 2px solid blue;
+                                            padding-left: 100px;
+                                        ">
                                             <p style="
                                                 padding-left: 250px;
                                             ">{{post.title}}</p>
