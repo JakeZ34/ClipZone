@@ -8,4 +8,5 @@
 * Users can like others posts
 
 ## Demo
-gif update coming
+![gif](/demo/ClipZone.gif)
+
