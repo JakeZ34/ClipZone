@@ -145,7 +145,23 @@
                                                 class="btn btn-outline-danger">Delete</a>
                                             <p>{{post.user_likes.count}} Likes</p>
                                         </ul>
-                                        {% endfor %}
+                                        <!-- {% endfor %}
+                                        {% if magazine.creator.id != request.session.user_id %}
+                                        <p>Description: {{magazine.description}}</p>
+                                        {% else %}
+                                        <form action="/magazines/{{magazine.id}}/update" method="post">
+                                            {% csrf_token %}
+                                            <label for="title">Title:</label>
+                                            <input name='title' class="form-control w-50"
+                                                placeholder="{{magazine.title}}">
+                                            <label for="description">Description:</label>
+                                            <input name='description' class="form-control w-50"
+                                                placeholder="{{magazine.description}}">
+                                            <button type="submit" class="btn btn-primary">Update</button>
+                                            <a href="/magazines/{{magazine.id}}/delete" role="button"
+                                                class="btn btn-danger">Delete</a>
+                                        </form>
+                                        {% endif %} -->
                                     </div>
                                 </div>
                             </div>
