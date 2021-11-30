@@ -8,6 +8,6 @@
 * Users can like others posts
 
 ## Demo
-![gif](/demo/clipzone.gif)
+![gif](/demo/clipzonedemo.gif)
 
 
